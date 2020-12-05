@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js "></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- <script src="js/nav.js"></script> -->
+
+
+    <script>
+      $(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+  });
+    </script>
+
+<script>
+$(document).ready(function(){
+
+$("body").fadeOut(1);
+$("body").fadeIn(3000);
+
+$("#navbar").fadeOut(1);
+$("#navbar").removeClass("hidden");
+$("#navbar").show(4500);
+
+
+})
+
+
+</script>
+<style>
+     #form_back{
+   background-image: url(images/background-texture.jpg);
+   background-position: center center;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+ }
+
+                 /* Footer */
+                 #footer{
+  
+  background-image: url(images/walibi-holland-attractie-spaceshot.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  }
+ 
+
+</style>
+</head>
+<body>
+    
+
+  <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+    <a href="index.html" class="nav-brand"><img src="images/logo-min.png" class="img-fluid" id="logo" style="position: relative;"/></a>
+    
+            <!-- responsive button mobile view -->
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                                      <!-- dropdown of Attractions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Attractions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+            <a class="dropdown-item" href="rides.html">Merciado's Rides</a>
+            <a class="dropdown-item" href="waterpark.html">Merciado's WaterPark</a>
+        </li>
+                                  <!-- dropdown of Explore -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explore
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+            <a class="dropdown-item" href="resturants.html">Resturants</a>
+            <a class="dropdown-item" href="hotel.html">Hotel & Resorts</a>
+    
+    
+        </li>
+    
+    
+        <!-- Other Nav Links -->
+        <li class="nav-item"><a href="tickets.html" class="nav-link text-white">Tickets</a></li>
+        <li class="nav-item"><a href="" class="nav-link text-white">Gallary</a></li>
+        <li class="nav-item"><a href="About Us.html" class="nav-link text-white">About Us</a></li>
+        <li class="nav-item"><a href="ContactUS.html" class="nav-link text-white">Contacts Us</a></li>
+    
+      </ul>
+      </div>
+      
+    </nav>
+
+
+
+
+<div id="form_back">
+    <section id="content">
+      <div class="main">
+          <div class="wrapper">
+         
+          
+          
+        <div class="Card_In" style="display:none">
+        
+          
+          <br>
+      <br>
+      <br>
+   
+      <br><br>
+      <h2 style="font-family: Coronet; font-size: 52px;">Payment Option</h2>
+      <center>
+      <div style="width:412px;">
+      
+        <form onsubmit="">
+      
+      <br>
+      <label style="width: 140px; text-align: left">Credit Card</label>
+      <input class="input" id="card" type="tel" maxlength="19" placeholder="Credit Card Number e.g= xxxx-xxxx-xxxx-xxxx" required="">
+      <br>
+      <input required="" type="radio" name="card" checked=""> <img src="images/tickets_img/Capture1.jpg" width="60" height="40">
+      <input required="" type="radio" name="card"> <img src="images/tickets_img/Capture.jpg" width="60" height="40">
+      <input required="" type="radio" name="card"> <img src="images/tickets_img/index.jpg" width="60" height="40">
+      <br>
+      <label style="width: 140px; text-align: left">CVV</label>
+      <input id="pi" class="input" type="tel" maxlength="3" placeholder="CVV" required="">
+      <br>
+      <label style="width: 140px; text-align: left">Last 3 Numbers</label>
+      <input id="cardn" class="input" type="tel" maxlength="3" placeholder="Last 3 Digits for Card Number " required="">
+      <br>
+      <label style="width: 140px; text-align: left">Zip Code</label>
+      <input id="zc" class="input" type="tel" maxlength="5" placeholder="Zip Code" required="">
+      <br>
+      <label style="width: 140px; text-align: left">Select Category</label>
+      <select size="1" class="input" id="s">
+      <option value="1" id="jun" required="" class="S">Select Your Ticket Package </option>
+      <option value="2" class="f_p">Family Pack </option>
+      <option value="3" class="we_p">Single Pack</option>
+      <option value="4" class="weekday_p">Weekend Pack</option>
+      </select>
+      <h1 class="Family" style="font-family:calibri;font-size:20px;display:none;z-index:99">Price = $40.00</h1>
+      <h1 class="Weekend" style="font-family:calibri;font-size:20px;display:none">Price = $12.00</h1>
+      <h1 class="Weekday" style="font-family:calibri;font-size:20px;display:none">Price = $365.00</h1>
+      
+      <br>
+      <input id="Back" style="border:none;float:;margin-left:200px" class="button-1" type="button" value="<< &nbsp; Back" onclick="">
+      
+      <!--<button type="button" value="Show price" class="f_p"></button>-->
+      <input id="Card_B" style="border:none;float:right" class="button-1" type="submit" value="Buy Now" onclick="Card()">
+      <br><br>
+      </form>
+      </div>
+      </center>
+      </div>
+        
+        
+         <a href="#"><img class="img1" id="img" style="border-radius:50px;display:none" src="avatar_2x.html" height="50" width="50"></a>
+          
+      <div class="Per_In" style="">
+      <br>
+      <br>
+      <br><br>
+      <h2 style="font-family: Coronet; font-size: 52px;">Personal Information</h2>
+      <center>
+      <div id="j" style="width:412px">
+        <form>
+      <br><br>
+      <label style="width: 140px; text-align: left">First Name</label>
+      <input id="n4" class="inputn" type="text" placeholder="First Name" required="required">
+      <br>
+      <label style="width: 140px; text-align: left">Last Name</label>
+      <input id="n5" class="inputn2" type="text" placeholder="Last Name" required="">
+      <br>
+      <label style="width: 140px; text-align: left">Address</label>
+      <input class="input" type="text" placeholder="Full Address" id="ad" required="">
+      <br>
+      <label style="width: 140px; text-align: left">E-mail</label>
+      <input class="input" type="email" placeholder="Email" id="e2" required="">
+      <br>
+      <label style="width: 140px; text-align: left">Password</label>
+      <input class="input" type="password" placeholder="Password" required="" id="pass1">
+      <br>
+      <label style="width: 140px; text-align: left">Confirm Password</label>
+      <input class="input" type="password" placeholder="Confirm Password" required="" id="cpass1">
+      <br>
+      <label style="width: 140px; text-align: left">Date Of Birth</label>
+      <input class="input" placeholder="MM/dd/yyyy" type="date" id="date" required="">
+      <br>
+      
+      Agree 
+      <a href="About.html">Park Policies</a> <input id="chi" name="ju" type="checkbox" required="">
+      <br>
+      <br>
+      <input style="border:none;float:right" id="Per_B" class="button-1" type="button" value="Next &nbsp; >>" onclick="tic()">
+      <br><br>
+      </form>
+      </div>
+      </center>
+      <br>
+      <br>
+      
+      
+      
+      
+      
+      
+      </div>
+          </div>
+            </div>
+         
+        <!--=======================end of needless section=======================-->
+      </section>
+      
+    
+    </div>
+<script>
+  function tic()
+
+{
+	
+	
+	var name = document.getElementById('n4').value
+	var name2 = document.getElementById('n5').value
+	var add = document.getElementById('ad').value
+	var p = document.getElementById('pass1').value
+	var cp = document.getElementById('cpass1').value
+	var da = document.getElementById('date').value
+	var e = document.getElementById('e2').value
+	var check = document.getElementById('chi').checked
+	
+	
+	
+	if(name!=''  && name2!='' && da!='' && add!=''  && e!='' && p!='' && cp!='' && p==cp && /^\w+([\.-]?\w)*@+\w+([\.-]?\w)*(\.\w{2,3})+$/.exec(e) 
+	&& /^\D{1,10}$/.exec(name) && /^\D{1,10}$/.exec(name2) && check == true )
+	{
+	
+	$(document).ready(function(e) {
+    $(".Card_In").show("slow")
+        
+    
+});
+
+$(document).ready(function(e) {
+    $(".Per_In").hide("slow")
+        
+    
+});
+
+	
+	
+	
+	}
+	else if(name=='' && name2==''  && e=='' && p=='' && cp=='' && add=='' && da=='')
+	{
+		alert('please fillup the form')
+	}
+	else if (name=='')
+	{
+		alert('Please Enter a First Name')
+	}
+	
+	else if ( !(/^\D{1,20}$/).exec(name) || !(/^\D{1,20}$/).exec(name2)  )
+	{
+		alert('Please Enter a Correct name')
+	}
+	
+	else if (name2=='')
+	{
+		alert('Please Enter a Last Name')
+	}
+
+	else if (add=='')
+	{
+		alert('Please Enter a Full Address')
+	}
+	
+	else if (e=='')
+	{
+		alert('Please Enter a Email')
+	}
+	else if (!(/^\w+([\.-]?\w)*@+\w+([\.-]?\w)*(\.\w{2,3})+$/).exec(e))
+	{
+		alert('Your email is Incorrect \n Please enter a Correct email Follow this Pattern \n [moeez1909b@aptechgdn.net]')
+	}
+	
+	
+	else if  ( p=='')
+	{
+		alert('Please Enter a Password')
+	}
+	
+	else if  ( cp=='')
+	{
+		alert('Please Enter a Confirm Password')
+	}
+	
+	
+	
+	else if (p!=cp)
+	{
+		alert('Your Password donot Match')
+		
+	}
+	
+	
+	
+	else if  ( da=='')
+	{
+		alert('Please Enter Your Date of Birth')
+	}
+	
+	else if  ( (/^\D{1,10}$/).exec(da))
+	{
+		alert('Your Date of Birth is Incorrect')
+	}
+	else if  ( check == false)
+	{
+		alert('Please Agree the Park Policies ')
+	}
+	
+}
+
+
+
+function Card()
+
+{
+	
+	
+	var name = document.getElementById('card').value
+	var name2 = document.getElementById('pi').value
+	var add = document.getElementById('cardn').value
+	var p = document.getElementById('zc').value
+	var sel = document.getElementById('s').value
+	
+	
+
+	
+	
+	if(name!=''  && name2!='' &&  add!=''   && p!='' && /^\d{4}-\d{4}-\d{4}-\d{4}$/.exec(name) && /^\d{4}$/.exec(name2) &&
+	/^\d{3}$/.exec(add) && /^\d{5}$/.exec(p) && sel!=1  )
+	{
+	
+	
+             alert('You have successfully order Tickets')
+            window.location.assign('ticket.html')
+
+	
+	
+	
+	}
+	else if(name=='' && name2==''  && add=='' && p=='' )
+	{
+		alert('please fillup the form')
+	}
+	else if (name=='')
+	{
+		alert('Please Enter a Credit Card Number')
+	}
+	else if (!(/^\d{4}-\d{4}-\d{4}-\d{4}$/).exec(name))
+	{
+		alert('Your Credit Card Number is Incorrect \n Follow this Pattern 1234-5678-1234-5678')
+	}
+	
+	
+	else if (name2=='')
+	{
+		alert('Please Enter a Pin Code')
+	}
+	
+	else if (!(/^\d{3}$/.exec)(name2))
+	{
+		alert('Your Pin Code is Incorrect')
+	}
+
+	else if (add=='')
+	{
+		alert('Please Enter a Last 3 Digits of Card Number')
+	}
+	
+	else if (!(/^\d{3}$/).exec(add))
+	{
+		alert('Your Last 3 Digits of Card Number')
+	}
+	
+	
+	else if (p=='')
+	{
+		alert('Please Enter a Zipcode Code')
+	}
+	
+	else if (!(/^\d{5}$/).exec(p))
+	{
+		alert('Your Zipcode is Incorrect')
+	}
+	
+	else if (sel==1)
+	{
+		alert('Please Select Ticket')
+	}
+	else if(!(name=='' && name2==''  && add=='' && p=='')){
+alert("Thank You For Your order")
+	}
+	
+}
+</script>
+
+</body>
+</html>

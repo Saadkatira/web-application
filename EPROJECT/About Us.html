@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js "></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    <script>
+      $(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+  });
+    </script>
+
+<script>
+$(document).ready(function(){
+
+$("body").fadeOut(1);
+$("body").fadeIn(3000);
+
+$("#navbar").fadeOut(1);
+$("#navbar").removeClass("hidden");
+$("#navbar").show(4500);
+
+
+})
+
+
+</script>
+    <style>
+        /* body{
+            background-image: url(images/background-texture.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: fixed;
+        } */
+        .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+  .mainpic {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+    </style>
+</head>
+<body>
+
+
+    <div id="main">
+      <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+        <a href="index.html" class="nav-brand"><img src="images/logo-min.png" class="img-fluid" id="logo" style="position: relative;"/></a>
+        
+                <!-- responsive button mobile view -->
+          <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                                          <!-- dropdown of Attractions -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Attractions
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                <a class="dropdown-item" href="rides.html">Merciado's Rides</a>
+                <a class="dropdown-item" href="waterpark.html">Merciado's WaterPark</a>
+            </li>
+                                      <!-- dropdown of Explore -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Explore
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                <a class="dropdown-item" href="resturants.html">Resturants</a>
+                <a class="dropdown-item" href="hotel.html">Hotel & Resorts</a>
+        
+        
+            </li>
+        
+        
+            <!-- Other Nav Links -->
+            <li class="nav-item"><a href="tickets.html" class="nav-link text-white">Tickets</a></li>
+            <li class="nav-item"><a href="" class="nav-link text-white">Gallary</a></li>
+            <li class="nav-item"><a href="About Us.html" class="nav-link text-white">About Us</a></li>
+            <li class="nav-item"><a href="ContactUS.html" class="nav-link text-white">Contacts Us</a></li>
+        
+          </ul>
+          </div>
+          
+        </nav>
+        
+        </div>
+
+
+
+<div class="mainpic">
+    <img src="images/contactUs.png" class="img-fluid" style="width: 100%;"/>
+    <div class="centered">
+        <h3 style="font-size: 48px;">Did You Know About <br>Merciado Amusment Park</h3>
+        <br>
+        <input type="button" value="Click Here to See About Merciado" class="btn btn-dark aboutus" style="height: 60px; font-family: serif; font-size: 36px;"/>
+    </div>
+</div>
+
+<div class="container afterpic" style="display: none;">
+    <br>
+<br>
+<br>
+<section class="about-park">
+    <div class="container-fluid p-1 p-md-3">
+        <div class="container">
+        <div class="row">
+
+<div class="col-md-12 text-center">
+                <h1>Merciado Amusment Park</h1>
+                <hr>
+            </div>
+            <div class="col-12">
+               <p style="font-family: Rockwell; font-size: 24px;">
+                A Merciado Amusement Park is a one of a kind multi-faceted locale of brandishing, diversion, and retail attractions sitting nearly developed by <strong>Seth Group of Companies</strong>. It is as of now home to various energizing attractions inviting a large number of guests consistently:
+                - Thrill amusement at Merciado's Rides - Jet Express activity at Merciado's WaterPark - World-class games and brandishing foundations at Hotel Breakers - Shopping at Marciado Amusement Park Outlet Mall The goal will proceed to draw and host assorted attractions booked to open in the coming years fortifying Marciado Amusement Park position as a universal center point for family the travel industry. Likely arrangements for Marciado Amusement Park highlight advancements, for example, City of world, Palmarosa and Disney World, Lifestyle City.</p>
+               
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <hr style="border: none; height: 70px;">
+                <img src="images/logo.png" class="img-fluid"/>
+
+            </div>
+            <div class="col-md-6">
+<img src="images/WaterPark/logo.png" alt="logo" class="imf-fluid">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+</div>
+
+
+<script>
+$(document).ready(function(){
+$(".aboutus").click(function(){
+$(".mainpic").slideDown();
+$(".mainpic").hide();
+$(".afterpic").show();
+
+});
+});
+
+</script>
+</body>
+</html>

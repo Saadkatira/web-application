@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-3.4.1.min.js "></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/index.css"/>
+    <title>Main</title>
+
+    <style>
+.preload{
+  background-image: url(images/Bedankt-2019_0.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .preload {
+    background-image: url(images/frightnights-bg-mobile.jpg);
+  }
+	}
+
+    </style>
+
+</head>
+<body background="images/Bedankt-2019_0.jpg" class="preload">
+              <!-- navbar -->
+<div id="main">
+  <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+    <a href="index.html" class="nav-brand"><img src="images/logo.png" class="img-fluid" id="logo" style="position: relative;"/></a>
+    
+            <!-- responsive button mobile view -->
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                                      <!-- dropdown of Attractions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Attractions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+            <a class="dropdown-item" href="rides.html">Merciado's Rides</a>
+            <a class="dropdown-item" href="waterpark.html">Merciado's WaterPark</a>
+        </li>
+                                  <!-- dropdown of Explore -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explore
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+            <a class="dropdown-item" href="resturants.html">Resturants</a>
+            <a class="dropdown-item" href="hotel.html">Hotel & Resorts</a>
+    
+    
+        </li>
+    
+    
+        <!-- Other Nav Links -->
+        <li class="nav-item"><a href="tickets.html" class="nav-link text-white">Tickets</a></li>
+        <li class="nav-item"><a href="" class="nav-link text-white">Gallary</a></li>
+        <li class="nav-item"><a href="About Us.html" class="nav-link text-white">About Us</a></li>
+        <li class="nav-item"><a href="ContactUS.html" class="nav-link text-white">Contacts Us</a></li>
+    
+      </ul>
+      </div>
+      
+    </nav>
+
+</div>
+
+</body>
+<script>
+    $(document).ready(function(){
+    $("#navbar").fadeOut(1);
+    $("#navbar").removeClass("hidden");
+    $("#navbar").show(4500);
+    
+    })
+
+
+    </script>
+    
+</html>

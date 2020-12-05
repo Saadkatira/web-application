@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js "></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/nav.js"></script>
+<link rel="stylesheet" href="css/pointstyle.css">
+<link rel="stylesheet" href="css/footer.css">
+
+<script>
+  $(window).on('beforeunload', function(){
+$(window).scrollTop(0);
+});
+</script>
+
+<script>
+$(document).ready(function(){
+
+$("body").fadeOut(1);
+$("body").fadeIn(3000);
+
+$("#navbar").fadeOut(1);
+$("#navbar").removeClass("hidden");
+$("#navbar").show(4500);
+
+
+})
+
+
+</script>
+<style>
+
+body{
+  background-image: url(images/background-texture.jpg);
+}
+                /* Footer */
+                #footer{
+  
+  background-image: url(images/walibi-holland-attractie-spaceshot.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  }
+
+</style>
+
+
+
+</head>
+<body>
+
+
+                        <!-- navbar -->
+
+
+
+<!-- <div class="conatiner-fluid"> -->
+  <div id="main">
+    <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+      <a href="index.html" class="nav-brand"><img src="images/logo-min.png" class="img-fluid" id="logo" style="position: relative;"/></a>
+      
+              <!-- responsive button mobile view -->
+        <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                                        <!-- dropdown of Attractions -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Attractions
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+              <a class="dropdown-item" href="rides.html">Merciado's Rides</a>
+              <a class="dropdown-item" href="waterpark.html">Merciado's WaterPark</a>
+          </li>
+                                    <!-- dropdown of Explore -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Explore
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+              <a class="dropdown-item" href="resturants.html">Resturants</a>
+              <a class="dropdown-item" href="hotel.html">Hotel & Resorts</a>
+      
+      
+          </li>
+      
+      
+          <!-- Other Nav Links -->
+          <li class="nav-item"><a href="tickets.html" class="nav-link text-white">Tickets</a></li>
+          <li class="nav-item"><a href="" class="nav-link text-white">Gallary</a></li>
+          <li class="nav-item"><a href="About Us.html" class="nav-link text-white">About Us</a></li>
+          <li class="nav-item"><a href="ContactUS.html" class="nav-link text-white">Contacts Us</a></li>
+      
+        </ul>
+        </div>
+        
+      </nav>
+    
+    </div>
+
+
+
+
+
+
+
+    <!-- slide img -->
+    <div class="hero-image">
+      <img src="images/WaterPark/volcano-bay-waturi-beach-wide-a.webp" class="img-fluid" style="width: 100%;"/>
+        <div class="hero-text">
+          <h1 style="font-size:50px">Merciado Water Park</h1>
+    
+        </div>
+      </div>
+      
+<center><img src="images/WaterPark/logo.png" style="margin-top: -70px; height: 150px; width: 175px;"></center>
+      </div>
+              <br>
+
+<div class="container-fluid">
+<center>
+<h2 style="color: black;">Merciado Water Park
+</h2></center>
+<p style="font-size: 16px;" class="text-monospace">Welcome to Merciado Waterpark featuring 15 acres of splish-splashin' family fun! 
+  Kids will love Lakeslide Landing where pint-sized slides, geysers and fountains are fun to play around. 
+  And our mythical Lake Erie monster, Lemmy, is ready to play at Lemmy’s Lagoon. Test your courage on our four capsule drop slide,
+   Point Plummet, fill up on yummy treats at Beaches & Cream, lounge in redesigned cabanas and so much more! 
+   Cool off from the summer heat at Merciado Waterpark!</p>
+
+<!-- flipcard -->
+    <div class="container-fluid">
+    
+    <div class="row">
+        
+        <div class="col-md-4"  style="padding: 10px">
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/WaterPark/cp-lemmyslagoon-banner.jpg" alt="Avatar" style="width:100%;height:100%;">
+    </div>
+    <div class="flip-card-back">
+   <img src="images/WaterPark/cp-lakeslidelanding-banner.jpg" style="height: 100%; width:100%;">
+
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-md-4" style="padding: 10px">
+               <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/WaterPark/cp-plummet-portside-banner.jpg" alt="Avatar" style="width:100%;height:100%;">
+    </div>
+    <div class="flip-card-back">
+   <img src="images/WaterPark/cp-sundeck-banner.jpg" style="height: 100%; width:100%;">
+
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-md-4"  style="padding: 10px">
+               <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/WaterPark/cp-waverunnerrentals-generalbanner.jpg" alt="Avatar" style="width:100%;height:100%;">
+             
+    </div>
+    <div class="flip-card-back">
+   <img src="images/WaterPark/cp-parasailing-bannerv2.jpg" style="height: 100%; width:100%;">
+ 
+    </div>
+  </div>
+</div>
+        </div>
+        
+        </div>    
+
+</div>
+
+
+
+
+<!-- card -->
+
+<br>
+<!-- 
+
+        
+
+        </div>
+    <div class="col-md-4">
+<div class="card">
+<img src="profile_images/2.jpg" alt="John" style="width:100%; height: 200px;">
+<h1>John Doe</h1>
+<p class="title">CEO & Founder, Example</p>
+<p>Harvard University</p>
+<div style="margin: 24px 0;">
+<a href="#"><i class="fa fa-dribbble"></i></a> 
+<a href="#"><i class="fa fa-twitter"></i></a>  
+<a href="#"><i class="fa fa-linkedin"></i></a>  
+<a href="#"><i class="fa fa-facebook"></i></a> 
+</div>
+<p><button>Contact</button></p>
+</div>
+
+        </div>
+        <div class="col-md-4">
+        <div class="card">
+<img src="profile_images/3.jpg" alt="John" style="width:100%; height: 200px;">
+<h1>John Doe</h1>
+<p class="title">CEO & Founder, Example</p>
+<p>Harvard University</p>
+<div style="margin: 24px 0;">
+<a href="#"><i class="fa fa-dribbble"></i></a> 
+<a href="#"><i class="fa fa-twitter"></i></a>  
+<a href="#"><i class="fa fa-linkedin"></i></a>  
+<a href="#"><i class="fa fa-facebook"></i></a> 
+</div>
+<p><button>Contact</button></p>
+</div>
+
+        </div>
+    </div>
+    
+    
+    </div> -->
+
+  </div>
+
+
+  <hr style="border: none; size: 15px;">
+  <center><h3>Fun On Water</h3></center>
+<center><p style="font-size: 18px;" class="text-monospace">Rent a waverunner, fly high with North Coast Parasail, 
+  or chill out on the Merciado Beach. There's a whole lot of fun waiting for you</p></center>
+ <br><br>
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+<img src="images/WaterPark/cp-jetexpress-generalbanner.jpg" alt="John" style="width:100%; height: 300px;">
+<h1>Jet Express</h1>
+
+
+<p><input type="submit" value="Buy Now" class="form-control bg-dark text-white buynow"/></p>
+
+
+
+</div>
+</div>    
+<div class="col-md-8">
+<p style="font-size: 28px;">Jet over to the Lake Erie's finest islands, Kelleys Island and Put-in-Bay for a day aboard The Jet Express! Passengers will enjoy the scenic views of the lake and experience all the islands have to offer. Ferry service directly from Merciado is available on select dates and times at the Merciado's Marina. Stay tuned for our 2020 schedule.</p>
+
+</div>
+</div>
+</div>
+
+
+<!-- FOOTER -->
+<div id="footer">
+  <footer>
+<div class="footer-top text-black"  style="background-color: rgb(0,0,0,0.4);">
+<div class="container">
+     <br>
+      <div class="row">
+ <div class="col-sm-4">
+                    <h4 class="text-white">Stay Connected</h4>
+<div>
+      <input type="email" placeholder="Email Address" id="email"><input type="submit" value="Go" onclick="go()"><br>
+</div><br>
+ </div>
+<div class="col-md-2 col-01">
+<h4 class=" Center footer_nav-item-header">
+<a href="#">PLAY</a> 
+</h4>
+   <ul class="footer_nav-item-links">
+    <li class="footer_nav-item-link">
+<a href="rides.html">Rides</a> 
+</li>
+<li class="footer_nav-item-link"><a href="#">Events</a> </li>
+                                            
+<li class="footer_nav-item-link"><a href="#">Shows</a> </li>                                                                     
+                                                            
+<li class="footer_nav-item-link"><a href="waterpark.html">Fun on the water </a></li>
+<li class="footer_nav-item-link"><a href="tickets.html">VIP tours</a></li>
+                                         </div>
+
+                                          <div class="col-md-2 col-01">
+                                        <h4 class="footer_nav-item-header">
+                                        <a href="#">STAY</a> 
+                                           </h4>
+                                    <ul class="footer_nav-item-links">
+                                                      <li class="footer_nav-item-link">
+                                    <a href="hotel.html">Hotel Breakers</a> 
+                                                    </li>
+                                                    <li class="footer_nav-item-link">
+                                    <a href="hotel.html">Express Hotel</a> 
+                                                    </li>
+                                                    <li class="footer_nav-item-link">
+                                    <a href="tickets.html">Hotels & Ticket Packages</a> 
+                                                    </li>
+                            </div>
+                            <div class="col-md-2 col-01 ">
+                                <h4 class="footer_nav-item-header">
+                            <a href="#">TICKETS</a> 
+                                </h4>
+                                    <ul class="footer_nav-item-links">
+                                            <li class="footer_nav-item-link">
+                            <a href="tickets.html">Daily Tickets</a> 
+                                            </li>
+                                            <li class="footer_nav-item-link">
+                            <a href="tickets.html"> Season Passes</a> 
+                                            </li>
+                                            <li class="footer_nav-item-link">
+                            <a href="tickets.html">Group Tickets</a> 
+                                            </li>
+                                            <li class="footer_nav-item-link">
+                            <a href="tickets.html"> Drinks & Dining</a> 
+                                            </li>
+                                            <li class="footer_nav-item-link">
+                            <a href="tickets.html">Fast Lane</a> 
+                                            </li>
+                                            <li class="footer_nav-item-link">
+                            <a href="tickets.html">Platinum Pass Benefits</a> 
+                                            </li>
+                    </div>
+                    <div class="col-md-2 col-01">
+                        <h4 class="footer_nav-item-header">
+                    <a href="#">HELPS</a> 
+                        </h4>
+                            <ul class="footer_nav-item-links">
+                                                      <li class="footer_nav-item-link">
+                                         <a href="park_time.html">Park Hours</a> 
+                                                       </li>
+                                                       <li class="footer_nav-item-link">
+                                         <a href="#">FAQs</a></li>
+                                                       <li class="footer_nav-item-link">
+                                         <a href="#">Community</a> 
+                                                        </li>
+                                                        <li class="footer_nav-item-link">
+                                         <a href="#"> Media Center</a> 
+                                                        </li>
+                                                        <li class="footer_nav-item-link">
+                                         <a href="#"> Privacy & Legal</a> 
+                                                        </li>
+                                                        <li class="footer_nav-item-link">
+                                         <a href="#">Contact Us</a> 
+                                                         </li>
+                    </div>
+                </div >
+            
+                <div class="text-center" role="contentinfo">
+                    <span class="text-white"> SETH GROUP OF COMPANIES</span>
+                    <span>|</span>
+                    <span class="text-white">&copy; MARCIADO AMUSEMENT PARK</span>
+                </div>
+                
+                                </div>
+                            </div>
+                            </footer>
+</div> 
+
+
+<script>
+$(document).ready(function(){
+  $(".buynow").click(function(){
+ window.location.href = "tickets.html"
+  })
+})
+
+
+
+</script>
+
+</body>
+</html>

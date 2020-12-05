@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js "></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    <script>
+      $(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+  });
+    </script>
+
+<script>
+$(document).ready(function(){
+
+$("body").fadeOut(1);
+$("body").fadeIn(3000);
+
+$("#navbar").fadeOut(1);
+$("#navbar").removeClass("hidden");
+$("#navbar").show(4500);
+
+
+})
+
+
+</script>
+<style>
+/* Footer */
+#footer{
+
+background-image: url(images/walibi-holland-attractie-spaceshot.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover ;
+}
+  </style>
+  <title>Pass Perk</title>
+  </head>
+  <body>
+                    <!-- navbar -->
+
+
+
+<!-- <div class="conatiner-fluid"> -->
+  <div id="main">
+    <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+        <a href="index.html" class="nav-brand"><img src="images/logo-min.png" class="img-fluid" id="logo" style="position: relative;"/></a>
+        
+                <!-- responsive button mobile view -->
+          <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                                          <!-- dropdown of Attractions -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Attractions
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                <a class="dropdown-item" href="rides.html">Merciado's Rides</a>
+                <a class="dropdown-item" href="waterpark.html">Merciado's WaterPark</a>
+            </li>
+                                      <!-- dropdown of Explore -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Explore
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                <a class="dropdown-item" href="resturants.html">Resturants</a>
+                <a class="dropdown-item" href="hotel.html">Hotel & Resorts</a>
+        
+        
+            </li>
+        
+        
+            <!-- Other Nav Links -->
+            <li class="nav-item"><a href="tickets.html" class="nav-link text-white">Tickets</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallary</a></li>
+            <li class="nav-item"><a href="About Us.html" class="nav-link text-white">About Us</a></li>
+            <li class="nav-item"><a href="ContactUS.html" class="nav-link text-white">Contacts Us</a></li>
+        
+          </ul>
+          </div>
+          
+        </nav>
+      
+      </div>
+
+<div>
+    <img src="images/cp-passperks-desktop-sm-banner.jpg" class="img-fluid"/>
+</div>
+
+<div class="container" id="discription">
+    <br>
+    <h2>Pass Perks</h3>
+        <br>
+    <h3>Earn rewards while having fun!</h4>
+        <br>
+    <p style="font-family: Gabriola; font-size: 24px;">Get rewards simply by having fun? YES! With Merciado's Pass Perks, a new rewards program exclusively for Season Passholders,
+     each and every park visit counts toward earning fantastic surprises that you can redeem on future visits and
+      entries in a drawing for a one-of-a-kind VIP experience.
+<br>
+    Here’s how it works if you have a 2020 Season Pass: You visit Merciado Amusment Park and have an awesome, colossal blast, like you always do. 
+    The next thing you know, you check email and there’s a message from us saying that the next time you visit during certain dates, you will receive a mega-marvelous goodie, like a FREE Bring-A-Friend ticket, one of our scrumptious treats or a humongous discount to something sensational.
+     Or, your email could say that your name has been drawn, you've won a Merciado's VIP experience! You never know what you can get, 
+    so it’s best to keep coming to the park and keep earning those valuable Pass Perks towards an experience like no other!
+<br>
+Want to become a Passholder to take advantage of Pass Perks and all the other rewards program benefits? Buy your 2020 Season Pass today!
+</p>
+<center>
+<input type="button" value="Get Your Pass Now!" class="btn btn-primary" id="buypass"/></center>
+</div>
+
+<div class="container" id="passes" style="display: none;">
+    <br>
+
+                                <!-- PASS # 1 -->
+<div class="row">
+<div class="col-md-2">
+<img src="images/passes/cp-2020sp-gold-ticketlisting.png" class="img-fluid"/>
+</div>
+<div class="col-md-8">
+<h3>2020 GOLD PASS</h3>
+<p><strong>Unlimited Visits, Free Parking and More!</strong></p>
+<p>Includes unlimited visits to Merciado Amusment and Merciado Waterpark every public operating day in 2020, 
+    free parking, special discounts, early ride times and more for less than the cost of two visits!</p>
+</div>
+<div class="col-md-2">
+<p style="font-size: 9px; font-style: italic;">Buy Online for only</p>
+<h4 style="color: lightgreen;">$129*</h4>
+<p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+<input type="button" class="btn btn-primary gototicket" value="Buy Now">
+</div>
+</div>
+<hr>
+                                <!-- PASS # 2 -->
+
+<div class="row">
+    <div class="col-md-2">
+    <img src="images/passes/cp-2020sp-platinum-ticketlisting.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-8">
+    <h3>2020 PLATINUM PASS</h3>
+    <p><strong>Enjoy Access to All Merciado Amusment Parks</strong></p>
+    <p>Enjoy all the benefits of the Merciado Amusment Parks Gold Pass with the added benefits of enjoying all Platinum Passholder exclusive privileges at all
+         Merciado Amusment Park across the country</p>
+    </div>
+    <div class="col-md-2">
+    <p style="font-size: 9px; font-style: italic;">Buy Online for only</p>
+    <h4 style="color: lightgreen;">$220*</h4>
+    <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+    <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+    </div>
+    </div>
+    <hr>
+                                <!-- PASS # 3 -->
+
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-2020sp-regular-ticketlisting.png" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>2020 SEASON PASS</h3>
+        <p>Includes unlimited visits to Merciado Amusment & Waterpark every public operating day in 2020, 
+            free parking, special discounts, early ride times and more for less than the cost of two visits!</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">Buy Online for only</p>
+        <h4 style="color: lightgreen;">$115*</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+        <hr>
+
+                                <!-- PASS # 4 -->
+<div class="row">
+    <div class="col-md-2">
+    <img src="images/passes/cp-militarymondays-150-ticketlisting.jpg" class="img-fluid"/>
+    </div>
+    <div class="col-md-8">
+    <h3>MILLITARY MONDAY</h3>
+    <p>Valid any Monday Merciado Amusment Park is open to the public during the 2020 season. Not valid for separately ticketed events, 
+        concerts or park buyouts, unless otherwise indicated. All active, retired or honorably discharged military members are eligible, 
+        plus up to six (6) Merciado Amusment Park can be purchased for $44 each for immediate family members.</p>
+    </div>
+    <div class="col-md-2">
+    <p style="font-size: 9px; font-style: italic;">Visit On Mondays for only</p>
+    <h4 style="color: lightgreen;">$18.70*</h4>
+    <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+    <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+    </div>
+    </div>
+    <hr>
+                                <!-- PASS # 5 -->
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-resortspackages-ticketlisting.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>MERCIADO HOTEL & RESORT PASS</h3>
+        <p>You’ll always find special savings and exclusive perks when you stay with us at an official Cedar Point hotel property.
+             Enjoy discounted tickets, Early Entry – the chance to enter the park one hour before the general public to ride some of the biggest rides in the world,
+             and the closest rooms to the world’s best amusement park destination.</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">Buy Online for only</p>
+        <h4 style="color: lightgreen;">$440*</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+        <hr>
+
+
+                                <!-- PASS # 6 -->
+     <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-fundaybundle-ticketlisting.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>FUNDAY BUNDLE</h3>
+        <p><strong>Admission + Parking + Single Meal Deal</strong></p>
+        <p>Get everything you need for a full day of fun in 2020: One admission to Merciado Park, Parking and a Single Meal Deal.</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">Buy Online for only</p>
+        <h4 style="color: lightgreen;">$129*</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+    <hr>
+
+                                    <!-- PASS # 7 -->
+
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-groups-150-ticketlisting.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>15-99 GROUP TICKETS</h3>
+        <p><strong>Admission + Parking + Single Meal Deal</strong></p>
+        <p>Gather family, friends, and co-workers to share in all of the fun and thrills at Merciado Amusment Park.
+             These tickets are good on the day of your choice during public operating days of the 2020 season.
+             You'll select your date of visit at the time of purchase.</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">Get 15+ Tickets Each As Low As</p>
+        <h4 style="color: lightgreen;">$40 / Person</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+    <hr>
+                                    <!-- PASS # 8 -->
+
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cf-fastlane-ticketlisting.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>FAST LANE</h3>
+        <p>Make the most of your day with a Fast Lane wristband that allows you to bypass the regular lines on more than 20 rides and attractions
+             including Valravn, Gatekeeper, Dodgem, and more. 
+            Ride as many times as you want all day long. The only thing we limit is the number of these exclusive passes we sell!</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">As Low As</p>
+        <h4 style="color: lightgreen;">$67</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+    <hr>
+                                    <!-- PASS # 9 -->
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cf-2020alldaydining-ticketlisting.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>ALL DAY DINNING</h3>
+        <p><strong>Eat All Day for One Great Price</strong></p>
+        <p>With the All Day Dining Plan you'll save a bundle while never going hungry.
+           Enjoy an entree and a side every time you choose to stop in at one of the participating restaurants inside the park for one visit during the 2020 season.
+           Best of all, there's only a 90-minute interval time between meals. Add food to your fun with the All Day Dining Plan.</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">Dine All Day for One Low Price</p>
+        <h4 style="color: lightgreen;">$40</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+    <hr>
+
+                                    <!-- PASS # 10 -->
+
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-sunriseviptour-cta.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>SUNRISE THRILLS VIP TOURS</h3>
+        <p>Get a behind-the-scenes look at the coasters of Merciado Amusment Park. Plus, hitch a ride in 
+            Valravn's lift elevator to watch the sunrise as you ascend 223 feet above the park for a once-in-a-lifetime photo opportunity.</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">Buy Online For</p>
+        <h4 style="color: lightgreen;">$199/ Person</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+    <hr>
+
+                                    <!-- PASS # 12 -->
+
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-goldviptour-cta.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>GOLD VIP TOURS</h3>
+        <p>Experience what it's like to be king or queen for the day at Merciado Amusment Park with a Gold VIP Tour.
+             Nine hours of tour time, preferred parking, 
+            exclusive food and merchandise perks and so much more.</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">Buy Online For</p>
+        <h4 style="color: lightgreen;">$475/ Person</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+    <hr>
+
+                                    <!-- PASS # 13 -->
+
+    <div class="row">
+        <div class="col-md-2">
+        <img src="images/passes/cp-destination-celebrationpackage-ticketlisting.jpg" class="img-fluid"/>
+        </div>
+        <div class="col-md-8">
+        <h3>CELEBRATION PACKAGE</h3>
+        <p><strong>Valid May 9 – September 7, 2020</strong></p>
+        <p>It’s not every day you turn 150, but we’re celebrating our anniversary every day this season and we want you to join in! This celebratory package features an overnight stay at your choice of Merciado Park property, an exclusive Merciado Parks's Button Trading Pack,
+             Play & Save Coupon Book, admission to Merciado Park for 1 or 2 days, unlimited access to the Merciado Park mile long beach</p>
+        </div>
+        <div class="col-md-2">
+        <p style="font-size: 9px; font-style: italic;">As Low As</p>
+        <h4 style="color: lightgreen;">$79/ Person</h4>
+        <p  style="font-size: 9px; font-style: italic;">plus applicable taxes and fees</p>
+        <input type="button" class="btn btn-primary gototicket" value="Buy Now"/>
+        </div>
+        </div>
+    <hr>
+
+
+
+    <p>Merciado is not responsible for any inconvenience or financial loss due to unauthorized resale, and/or duplication of tickets on websites and apps such as OfferUp,
+         Craigslist, Ebay, Letgo, Facebook Marketplace and other auction and resale sites.
+         Tickets sold through these sources are not valid for entry into Cedar Point or Cedar Point Shores.
+         Cedar Point has implemented enhanced online security measures to help limit the number of fraudulent tickets that are in the marketplace,
+         and as such, you may be required to provide proof of purchase for any order at the front gate.</p>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+    $("#buypass").click(function(){
+        $("#discription").hide()
+    });
+});
+
+$(document).ready(function(){
+    $("#buypass").click(function(){
+        $("#passes").show()
+    });
+});
+
+
+</script>
+<script>
+    $(document).ready(function(){
+    $(".gototicket").click(function(){
+        window.location.href = "tickets_form.html"
+    })
+    })
+</script>
+
+
+                                <!--       FOOTRER            -->
+
+                                <div id="footer">
+                                    <footer>
+                          <div class="footer-top text-black"  style="background-color: rgb(0,0,0,0.4);">
+                                <div class="container">
+                                       <br>
+                                        <div class="row">
+                                   <div class="col-sm-4">
+                                                      <h4 class="text-white">Stay Connected</h4>
+                            <div>
+                                        <input type="email" placeholder="Email Address" id="email"><input type="submit" value="Go" onclick="go()"><br>
+                        </div><br>
+                                   </div>
+                             <div class="col-md-2 col-01">
+                              <h4 class=" Center footer_nav-item-header">
+                         <a href="#">PLAY</a> 
+                      </h4>
+                                     <ul class="footer_nav-item-links">
+                                      <li class="footer_nav-item-link">
+                                <a href="rides.html">Rides</a> 
+                            </li>
+                         <li class="footer_nav-item-link"><a href="#">Events</a> </li>
+                                                                              
+                         <li class="footer_nav-item-link"><a href="#">Shows</a> </li>                                                                     
+                                                                                              
+                        <li class="footer_nav-item-link"><a href="waterpark.html">Fun on the water </a></li>
+                        <li class="footer_nav-item-link"><a href="tickets.html">VIP tours</a></li>
+                                                                           </div>
+                    
+                                                                            <div class="col-md-2 col-01">
+                                                                          <h4 class="footer_nav-item-header">
+                                                                          <a href="#">STAY</a> 
+                                                                             </h4>
+                                                                      <ul class="footer_nav-item-links">
+                                                                                        <li class="footer_nav-item-link">
+                                                                      <a href="hotel.html">Hotel Breakers</a> 
+                                                                                      </li>
+                                                                                      <li class="footer_nav-item-link">
+                                                                      <a href="hotel.html">Express Hotel</a> 
+                                                                                      </li>
+                                                                                      <li class="footer_nav-item-link">
+                                                                      <a href="tickets.html">Hotels & Ticket Packages</a> 
+                                                                                      </li>
+                                                              </div>
+                                                              <div class="col-md-2 col-01 ">
+                                                                  <h4 class="footer_nav-item-header">
+                                                              <a href="#">TICKETS</a> 
+                                                                  </h4>
+                                                                      <ul class="footer_nav-item-links">
+                                                                              <li class="footer_nav-item-link">
+                                                              <a href="tickets.html">Daily Tickets</a> 
+                                                                              </li>
+                                                                              <li class="footer_nav-item-link">
+                                                              <a href="tickets.html"> Season Passes</a> 
+                                                                              </li>
+                                                                              <li class="footer_nav-item-link">
+                                                              <a href="tickets.html">Group Tickets</a> 
+                                                                              </li>
+                                                                              <li class="footer_nav-item-link">
+                                                              <a href="tickets.html"> Drinks & Dining</a> 
+                                                                              </li>
+                                                                              <li class="footer_nav-item-link">
+                                                              <a href="tickets.html">Fast Lane</a> 
+                                                                              </li>
+                                                                              <li class="footer_nav-item-link">
+                                                              <a href="tickets.html">Platinum Pass Benefits</a> 
+                                                                              </li>
+                                                      </div>
+                                                      <div class="col-md-2 col-01">
+                                                          <h4 class="footer_nav-item-header">
+                                                      <a href="#">HELPS</a> 
+                                                          </h4>
+                                                              <ul class="footer_nav-item-links">
+                                                                                        <li class="footer_nav-item-link">
+                                                                           <a href="park_time.html">Park Hours</a> 
+                                                                                         </li>
+                                                                                         <li class="footer_nav-item-link">
+                                                                           <a href="#">FAQs</a></li>
+                                                                                         <li class="footer_nav-item-link">
+                                                                           <a href="#">Community</a> 
+                                                                                          </li>
+                                                                                          <li class="footer_nav-item-link">
+                                                                           <a href="#"> Media Center</a> 
+                                                                                          </li>
+                                                                                          <li class="footer_nav-item-link">
+                                                                           <a href="#"> Privacy & Legal</a> 
+                                                                                          </li>
+                                                                                          <li class="footer_nav-item-link">
+                                                                           <a href="ContactUS.html">Contact Us</a> 
+                                                                                           </li>
+                                                      </div>
+                                                  </div >
+                                                  <div class="text-center" role="contentinfo">
+                                                      <span class="text-white"> SETH GROUP OF COMPANIES</span>
+                                                      <span>|</span>
+                                                      <span class="text-white">&copy; MARCIADO AMUSEMENT PARK</span>
+                                                  </div>
+                                                  
+                                                                  </div>
+                                                              </div>
+                                                              </footer>
+                            </div> 
+                    
+                    
+                    
+                    
+                    <script>
+                      function go(){
+                        var email=document.getElementById("email").value;
+                    
+                     if (email=='')
+                        {
+                            alert('Please Enter a Email')
+                        }
+                        else if (!(/^\w+([\.-]?\w)*@+\w+([\.-]?\w)*(\.\w{2,3})+$/).exec(email))
+                        {
+                            alert('Your email is Incorrect \n Please enter a Correct email Follow this Pattern \n [moeez1909b@aptechgdn.net]')
+                      }
+                      else if
+                      ((/^\w+([\.-]?\w)*@+\w+([\.-]?\w)*(\.\w{2,3})+$/).exec(email)){
+                        alert("Thank You for subscription")
+                      }
+                      }
+                    </script>
+
+      </body>
+</html>

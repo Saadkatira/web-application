@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js "></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+<!-- 
+    <script>
+      $(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+  });
+    </script> -->
+
+<script>
+$(document).ready(function(){
+
+$("body").fadeOut(1);
+$("body").fadeIn(3000);
+
+$("#navbar").fadeOut(1);
+$("#navbar").removeClass("hidden");
+$("#navbar").show(4500);
+
+
+})
+
+
+</script>
+
+
+
+
+    <style>
+        #main{
+            background-image: url(images/cu-2.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: darkgoldenrod;
+
+        }
+.main2{
+    opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+            <a href="index.html" class="nav-brand"><img src="images/logo-min.png" class="img-fluid" id="logo" style="position: relative;"/></a>
+            
+                    <!-- responsive button mobile view -->
+              <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                                              <!-- dropdown of Attractions -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Attractions
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                    <a class="dropdown-item" href="rides.html">Merciado's Rides</a>
+                    <a class="dropdown-item" href="waterpark.html">Merciado's WaterPark</a>
+                </li>
+                                          <!-- dropdown of Explore -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Explore
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                    <a class="dropdown-item" href="resturants.html">Resturants</a>
+                    <a class="dropdown-item" href="hotel.html">Hotel & Resorts</a>
+            
+            
+                </li>
+            
+            
+                <!-- Other Nav Links -->
+                <li class="nav-item"><a href="tickets.html" class="nav-link text-white">Tickets</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-white">Gallary</a></li>
+                <li class="nav-item"><a href="About Us.html" class="nav-link text-white">About Us</a></li>
+                <li class="nav-item"><a href="ContactUS.html" class="nav-link text-white">Contacts Us</a></li>
+            
+              </ul>
+              </div>
+              
+            </nav>
+            </div>
+
+
+
+
+
+    <section class="Contact Us">
+        <div class="container main2">
+            <br><br>
+            <h1 class="text-center pt-5">Contact Us</h1>
+            <hr>
+            <form action="#" onsubmit="return validation()">
+                <div class="row">
+                <div class="col-md-6">
+               <h5><label for="name">First Name :-</label></h5> 
+               <input type="text" placeholder="First Name" class="form-control" id="first" autocapitalize="off">
+               <span id="firstname" class="text-danger font-weight-bold"></span>
+            </div>
+            <div class="col-md-6">
+                <h5><label for="name">Last Name :-</label></h5> 
+                <input type="text" placeholder="Last Name" class="form-control" id="last" autocapitalize="off">
+                <span id="lastname" class="text-danger font-weight-bold"></span><br>
+             </div>
+             <div class="col-md-6">
+                 <h5><label for="name">Phone No :-</label></h5>
+                 <input type="text" placeholder="Phone Number" class="form-control" id="phone" autocapitalize="off">
+                 <span id="number" class="text-danger font-weight-bold"></span>
+             </div>
+             <div class="col-md-6">
+                <h5><label for="name">Subject :-</label></h5>
+                <input type="text" placeholder="Subject" class="form-control" id="sub" autocapitalize="off">
+                <span id="ject" class="text-danger font-weight-bold"></span><br>
+            </div>
+            <div class="col-md-12">
+                <h5><label for="name">Email :-</label></h5>
+                <input type="email" placeholder="Email Address" class="form-control" id="email" autocapitalize="off">
+                <span id="address" class="text-danger font-weight-bold"></span><br>
+            </div>
+            <div class="col-md-12">
+           <h5><label for="name">Message :-</label></h5> 
+            <textarea class="form-control" name="comment" id="message" autocapitalize="off"></textarea>
+            <span id="suggestion" class="text-danger font-weight-bold"></span><br><br> 
+            <input type="submit" class="form-control btn btn-primary">
+        </div>
+            </div>
+        </form>  
+    </div>
+    </section>
+
+  <script>
+     function validation(){
+         var name = document.getElementById("first").value;
+         var name1 = document.getElementById("last").value;
+         var phonenumber = document.getElementById("phone").value;
+         var subject = document.getElementById("sub").value;
+         var emailaddress = document.getElementById("email").value;
+         var mess = document.getElementById("message").value;
+
+
+
+
+         if(name == ""){
+             document.getElementById("firstname").innerHTML="**Please enter your First Name!**";  
+         }
+         else if((name.length <= 2) || (name.length > 10 )){
+            document.getElementById("firstname").innerHTML="**Name must be between 3 to 10 characters!**";
+         }
+         else if(!isNaN(name)){
+            document.getElementById("firstname").innerHTML="**Numbers are not acceptable!**";
+         } 
+          
+
+         if(name1 == ""){
+             document.getElementById("lastname").innerHTML="**Please enter your Last Name!**"    
+         }
+         else if((name1.length <= 2) || (name1.length > 10 )){
+            document.getElementById("lastname").innerHTML="**Name must be between 3 to 10 characters!**";
+         }
+         else if(!isNaN(name1)){
+            document.getElementById("lastname").innerHTML="**Numbers are not acceptable!**";
+         }
+         
+
+         if(phonenumber == ""){
+             document.getElementById("number").innerHTML="**Please enter your Phone Number!**";  
+         }
+         else if(isNaN(phonenumber)){
+             document.getElementById("number").innerHTML="**Only Numbers are Required!**";  
+         }
+         else if(phonenumber.length!=11){
+             document.getElementById("number").innerHTML="**User must be write 11 digits phone no.!**";  
+         }
+
+
+         if(subject == ""){
+             document.getElementById("ject").innerHTML="**Please enter your Subject!**";   
+         }
+         else if(!isNaN(subject)){
+             document.getElementById("ject").innerHTML="**Numbers are not acceptable!**";   
+         } 
+
+
+         if(emailaddress == ""){
+             document.getElementById("address").innerHTML="**Please enter your Email Address!**";
+         }
+         else if((emailaddress.charAt(emailaddress.length-4)!=".") && (emailaddress.charAt(emailaddress.length-3)!=".")){
+             document.getElementById("address").innerHTML="**invalid Email!**";
+         }
+
+
+         if(mess == ""){
+             document.getElementById("suggestion").innerHTML="**Please enter your Message!**";
+             
+         }
+
+     } 
+  </script>
+</body>
+</html>

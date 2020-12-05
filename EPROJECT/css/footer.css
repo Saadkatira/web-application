@@ -1,0 +1,13 @@
+#footer{
+  
+    background-image: url(images/walibi-holland-attractie-spaceshot.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    }
+    .col-01 h4 a{
+      color: white;
+    }
+    .col-01 ul li a {
+      color: white;
+    }

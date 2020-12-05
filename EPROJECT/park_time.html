@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js "></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/nav.js"></script>
+
+
+    <script>
+      $(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+  });
+    </script>
+
+<script>
+$(document).ready(function(){
+
+$("body").fadeOut(1);
+$("body").fadeIn(3000);
+
+$("#navbar").fadeOut(1);
+$("#navbar").removeClass("hidden");
+$("#navbar").show(4500);
+
+
+})
+
+
+</script>
+<style>
+  .park-timing {
+     background-image: url(images/timing_page.jpg);
+             background-position: center center;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+ }
+  .padding{
+     padding: 20% 0px;
+  }
+   #timings {
+     width: 50%;
+     background: rgba(16, 16, 16, 0.75);
+     border-radius: 40px;
+ }
+ #timings h2 {
+     color: rgba(97, 86, 241, 1);
+     font-family: Brush Script Std;
+     font-size: 40px;
+ }
+ 
+ #timings h5 {
+     font-size: 22px;
+     color: #fff;
+ 
+ }
+ .text{
+     font-family: Chaparral Pro Light;
+ }
+
+                 /* Footer */
+                 #footer{
+  
+  background-image: url(images/walibi-holland-attractie-spaceshot.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  }
+ 
+     </style>
+<title>Park Timings</title>
+</head>
+
+
+
+<nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+  <a href="index.html" class="nav-brand"><img src="images/logo-min.png" class="img-fluid" id="logo" style="position: relative;"/></a>
+  
+          <!-- responsive button mobile view -->
+    <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                                    <!-- dropdown of Attractions -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Attractions
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+          <a class="dropdown-item" href="rides.html">Merciado's Rides</a>
+          <a class="dropdown-item" href="waterpark.html">Merciado's WaterPark</a>
+      </li>
+                                <!-- dropdown of Explore -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Explore
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+          <a class="dropdown-item" href="resturants.html">Resturants</a>
+          <a class="dropdown-item" href="hotel.html">Hotel & Resorts</a>
+  
+  
+      </li>
+  
+  
+      <!-- Other Nav Links -->
+      <li class="nav-item"><a href="tickets.html" class="nav-link text-white">Tickets</a></li>
+      <li class="nav-item"><a href="" class="nav-link text-white">Gallary</a></li>
+      <li class="nav-item"><a href="About Us.html" class="nav-link text-white">About Us</a></li>
+      <li class="nav-item"><a href="ContactUS.html" class="nav-link text-white">Contacts Us</a></li>
+  
+    </ul>
+    </div>
+    
+  </nav>
+    
+    </div>
+
+
+    <div class="park-timing">
+        
+      <div class="container">
+          <div class="padding">
+              
+              <div class="mx-auto" id="timings">
+                  <div class="col-sm-12 text-center">
+                  <h2 class="py-5"> Opening Timings</h2>
+                  <h5 class="pb-4 mx-auto text"><span>Monday - Friday</span> &nbsp;: 11.00 am - 08.00 pm</h5 > 
+                  <h5 class="pb-4 mx-auto"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saturday</span> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 10.00 am - 09.00 pm </h5>
+                  <h5 class="pb-4 mx-auto"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sunday</span>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  : 10.00 am - 10.00 pm </h5>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+                
+<!-- Working -->
+
+
+
+
+
+                                                <!-- FOOTER -->
+
+
+
+
+
+</body>
+</html>
